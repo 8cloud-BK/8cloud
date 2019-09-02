@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>24K纯闪</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            height: 100%;
+        }
+        input{
+            margin: 25% 50%;
+        }
+    </style>
+    <script>
+        var i =1;
+        function time() {
+            time=setInterval("fn1();",50);
+        }
+        function fn1() {
+            bbb.style.display = "none";
+            if(i==1){
+                aaa.style.backgroundColor = "green";
+                i++;}else {
+                if(i==2){
+                    aaa.style.backgroundColor = "red";
+                    i++;}else {
+                    if (i==3){
+                        aaa.style.backgroundColor = "blue";
+                        i++;}else {
+                        if(i==4){
+                            aaa.style.backgroundColor = "yellow";
+                            i=1;
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+<div id="aaa">
+    <input type="button" value="开始摇摆!" id="bbb" onclick="time()">
+</div>
+</body>
+</html>
